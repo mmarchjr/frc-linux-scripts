@@ -4,3 +4,6 @@ curl -s https://api.github.com/repos/wpilibsuite/allwpilib/releases/latest \
 | tr -d \" \
 | wget -qi - -O wpilib.tar.gz
 | tar -xf wpilib.tar.gz
+| find / -maxdepth 3 -type d -name "WPILib*" 2>/dev/null \
+| cd;
+| cd \
