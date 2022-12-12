@@ -3,4 +3,4 @@ curl -s https://api.github.com/repos/wpilibsuite/allwpilib/releases/latest \
 | cut -d : -f 2,3 \
 | tr -d \" \
 | wget -qi - -O wpilib.tar.gz
-
+| tar -xf wpilib.tar.gz
